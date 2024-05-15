@@ -1,0 +1,30 @@
+// Import SCSS files
+@use "./colors.scss" as colors;
+@use "./task1.scss";
+@use "./task2.scss";
+@use "./task3.scss";
+@use "./task4.scss";
+
+//Default -  horizontal navigation menu on screens wider than 768 pixels
+
+// font
+@import url("https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+body {
+	background-color: colors.$color1;
+	margin: 20px;
+	font-family: "Spectral", serif;
+	font-weight: 400;
+	font-style: normal;
+	color: colors.$color2;
+}
+
+main {
+	margin-top: 150px;
+}
+
+@media (max-width: 768px) {
+	main {
+		margin-top: 400px;
+	}
+}

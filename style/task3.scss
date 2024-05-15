@@ -1,0 +1,26 @@
+@use "./colors.scss" as colors;
+
+main {
+	.award-name {
+		color: colors.$color4;
+	}
+	.award-description {
+		color: colors.$color2;
+		font-size: 18px;
+		max-width: 80ch;
+		margin: auto;
+		margin-bottom: 3rem;
+	}
+	img {
+		width: 100%;
+		max-width: 512px;
+	}
+}
+
+@media (max-width: 768px) {
+	main {
+		.award-description {
+			font-size: 16px;
+		}
+	}
+}

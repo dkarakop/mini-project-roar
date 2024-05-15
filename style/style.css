@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+header {
+  background-color: #fafafa;
+  margin-bottom: 2.5rem;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+header .header-container {
+  display: flex;
+  height: 92px;
+  place-items: center;
+  gap: 1rem;
+  padding: 5px 50px 5px 10px;
+  color: #000;
+}
+header .header-container .header-logo > img {
+  height: 70px;
+}
+header .header-container h1 {
+  font-family: "Spectral SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+header .header-container nav {
+  flex-grow: 2;
+}
+header .header-container nav .nav-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  list-style-type: none;
+  padding: 0;
+}
+header .header-container nav .nav-container .nav-list {
+  font-size: 1.2rem;
+}
+header .header-container nav .nav-container .nav-list a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+header .header-container nav .nav-container .nav-list a:hover {
+  color: #fd1e40;
+}
+
+@media (max-width: 768px) {
+  header {
+    text-align: center;
+  }
+  header .header-container {
+    height: auto;
+    flex-direction: column;
+    padding: 10px;
+    gap: 0;
+  }
+  header .header-container .header-logo > img {
+    height: 32px;
+  }
+  header .header-container h1 {
+    margin-top: 0;
+  }
+  header nav > ul.nav-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+main {
+  text-align: center;
+}
+main h2 {
+  color: #fafafa;
+}
+main .main-img {
+  width: 80%;
+  max-width: 512px;
+}
+
+main .films {
+  display: flex;
+  gap: 1rem;
+}
+main .films .film {
+  background-color: #fafafa;
+  padding: 2rem;
+  border-radius: 10px;
+  flex: 1;
+  color: #000;
+}
+main .films .film .film-img {
+  width: 100%;
+}
+main .films .film .film-name {
+  font-family: "Spectral SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  main .films {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+main .award-name {
+  color: #ffb753;
+}
+main .award-description {
+  color: #fafafa;
+  font-size: 18px;
+  max-width: 80ch;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+main img {
+  width: 100%;
+  max-width: 512px;
+}
+
+@media (max-width: 768px) {
+  main .award-description {
+    font-size: 16px;
+  }
+}
+main .quote {
+  color: #ffb753;
+}
+main .studio-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  grid-gap: 2rem;
+  margin-top: 3rem;
+}
+main .studio-container > img {
+  max-width: 256px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  main .studio-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  main .studio-container #img-4 {
+    grid-column: 2/3;
+  }
+}
+@media (max-width: 768px) {
+  main .studio-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+body {
+  background-color: #000;
+  margin: 20px;
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fafafa;
+}
+
+main {
+  margin-top: 150px;
+}
+
+@media (max-width: 768px) {
+  main {
+    margin-top: 400px;
+  }
+}/*# sourceMappingURL=style.css.map */
